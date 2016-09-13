@@ -12,6 +12,10 @@ export const config = {
     src: 'src/**/*',
     dest: './build',
   },
+  scripts: {
+    src: './scripts/main.js',
+    dest: './build/scripts',
+  },
   server: {
     src: './build',
   },
@@ -22,9 +26,5 @@ export const config = {
   vectors: {
     src: './vectors/*.svg',
     dest: './layouts/partials',
-  },
-  scripts: {
-    src: './scripts/main.js',
-    dest: './build/scripts',
   },
 };
