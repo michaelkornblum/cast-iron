@@ -3,12 +3,10 @@
 // Import vendor modules
 import { task, series, parallel, watch} from 'gulp';
 import { reload } from 'browser-sync';
-<<<<<<< HEAD
-=======
+
 
 // Import configuration file
 import { config } from './gulp-config';
->>>>>>> 61ac99061045a57cfda72a7a36c6f24e762a1551
 
 // Import Gulp tasks
 import { clean } from './gulp_modules/del';
@@ -45,8 +43,5 @@ task(clean);
 task('build', series(clean, html, parallel(scripts, styles, vectors)));
 
 // Start Gulp server from command-line
-<<<<<<< HEAD
+
 task('serve', series('build', parallel(watcher, server)));
-=======
-task('serve', series('build', server, 'watcher'));
->>>>>>> 61ac99061045a57cfda72a7a36c6f24e762a1551
