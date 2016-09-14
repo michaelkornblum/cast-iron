@@ -1,8 +1,14 @@
 /*jshint esversion: 6*/
 
-// Import Gulp functions
+// Import vendor modules
 import { task, series, parallel, watch} from 'gulp';
 import { reload } from 'browser-sync';
+<<<<<<< HEAD
+=======
+
+// Import configuration file
+import { config } from './gulp-config';
+>>>>>>> 61ac99061045a57cfda72a7a36c6f24e762a1551
 
 // Import Gulp tasks
 import { clean } from './gulp_modules/del';
@@ -22,11 +28,25 @@ function watcher() {
   watch(watchDir.vectors, vectors);
 }
 
-// Clean out build director
+// Set watch list
+task('watcher', () => {
+  watch(config.images.watchDir, images);
+  watch(config.html.watchDir, html);
+  watch(config.scripts.watchDir, scripts);
+  watch(config.server.watchDir, reload);
+  watch(config.styles.watchDir, styles);
+  watch(config.vectors.watchDir, vectors);
+});
+
+// Clean build directory from command-line
 task(clean);
 
 // Run default build task from command-line
 task('build', series(clean, html, parallel(scripts, styles, vectors)));
 
 // Start Gulp server from command-line
+<<<<<<< HEAD
 task('serve', series('build', parallel(watcher, server)));
+=======
+task('serve', series('build', server, 'watcher'));
+>>>>>>> 61ac99061045a57cfda72a7a36c6f24e762a1551
