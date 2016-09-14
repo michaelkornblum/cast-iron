@@ -8,7 +8,7 @@ export const config = {
     src: './images/*',
     dest: './build/images',
   },
-  metalsmith: {
+  html: {
     src: 'src/**/*',
     dest: './build',
   },
@@ -28,3 +28,12 @@ export const config = {
     dest: './layouts/partials',
   },
 };
+
+export const watchDir = {
+  html: ['./src/**/*', './layouts/**/*'],
+  images: './images/**/*',
+  scripts: './scripts/**/*',
+  server: './build/**/*',
+  styles: './styles/**/*',
+  vectors: './vectors',
+}

@@ -1,0 +1,10 @@
+doctype html
+html(lang="en")
+  head
+    include ./partials/head.pug
+
+  body
+    .wrapper
+      include ./partials/header.pug
+      main!=contents
+    script(src="scripts/bundle.js")

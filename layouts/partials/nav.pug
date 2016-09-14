@@ -1,0 +1,5 @@
+nav
+  ul.nav-list
+    for link in site.links
+      li.nav-list__item
+        a.nav-list__link(href=link.href) #{link.title}

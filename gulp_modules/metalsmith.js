@@ -8,7 +8,7 @@ import __ from 'lodash';
 import moment from 'moment';
 
 export function html() {
-  return src(config.metalsmith.src)
+  return src(config.html.src)
     .pipe(metalsmith({
       use: [
         _m().metadata({
@@ -60,5 +60,5 @@ export function html() {
         }),
       ],
     }))
-    .pipe(dest(config.metalsmith.dest));
+    .pipe(dest(config.html.dest));
 }

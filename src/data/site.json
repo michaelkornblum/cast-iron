@@ -1,1 +1,29 @@
-{}
+{
+  "title" : "openavenues.org",
+  "links" : [
+    {
+      "title" : "Home",
+      "href" : "/"
+    },
+    {
+      "title" : "Services",
+      "href" : "/services/"
+    },
+    {
+      "title" : "Clients",
+      "href" : "/clients/"
+    },
+    {
+      "title" : "About",
+      "href" : "/about/"
+    },
+    {
+      "title" : "News",
+      "href" : "/news/"
+    },
+    {
+      "title" : "Contribute",
+      "href" : "/contribution/"
+    }
+  ]
+}
