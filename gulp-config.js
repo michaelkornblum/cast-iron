@@ -20,7 +20,7 @@ export const config = {
   scripts: {
     src: './scripts/main.js',
     dest: './build/scripts',
-    watchDir: './scripts/**/*'
+    watchDir: './scripts/**/*.js'
   },
   server: {
     src: './build',

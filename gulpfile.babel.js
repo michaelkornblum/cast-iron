@@ -6,7 +6,7 @@ import { reload } from 'browser-sync';
 
 
 // Import configuration file
-import { config } from './gulp-config';
+import { watchDir } from './gulp-config';
 
 // Import Gulp tasks
 import { clean } from './gulp_modules/del';
@@ -17,6 +17,8 @@ import { server } from './gulp_modules/browser-sync';
 import { styles } from './gulp_modules/stylus';
 import { vectors } from './gulp_modules/svg-symbols';
 import { watchDir } from './gulp-config';
+
+task(scripts);
 
 function watcher() {
   watch(watchDir.html, html);
