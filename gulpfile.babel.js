@@ -16,7 +16,6 @@ import { scripts } from './gulp_modules/webpack';
 import { server } from './gulp_modules/browser-sync';
 import { styles } from './gulp_modules/stylus';
 import { vectors } from './gulp_modules/svg-symbols';
-import { watchDir } from './gulp-config';
 
 task(scripts);
 
