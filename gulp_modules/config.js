@@ -7,33 +7,25 @@ export const config = {
   images: {
     src: './images/*',
     dest: './build/images',
-    watchDir: './images/**/*',
   },
   html: {
     src: 'src/**/*',
     dest: './build',
-    watchDir: [
-      './src/**/*',
-      './layouts/**/*',
-    ],
   },
   scripts: {
     src: './scripts/main.js',
     dest: './build/scripts',
-    watchDir: './scripts/**/*.js'
   },
   server: {
     src: './build',
-    watchDir: './build/**/*'
   },
   styles: {
     src: './styles/main.styl',
-    dest: './styles/**/*',
+    dest: './build/styles/',
   },
   vectors: {
     src: './vectors/*.svg',
     dest: './layouts/partials',
-    watchDir: './vectors/**/*'
   },
 };
 
