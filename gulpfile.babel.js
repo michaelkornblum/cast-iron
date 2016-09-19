@@ -1,12 +1,11 @@
 /*jshint esversion: 6*/
 
 // Import vendor modules
-import { task, series, parallel, watch} from 'gulp';
+import { task, series, parallel, watch } from 'gulp';
 import { reload } from 'browser-sync';
 
-
 // Import configuration file
-import { watchDir } from './gulp-config';
+import { watchDir } from './gulp_modules/config';
 
 // Import Gulp tasks
 import { clean } from './gulp_modules/del';
@@ -20,7 +19,7 @@ import { vectors } from './gulp_modules/svg-symbols';
 // Watch task
 function watcher() {
   watch(watchDir.html, html);
-  watch(watchDir.images, html);
+  watch(watchDir.images, images);
   watch(watchDir.scripts, scripts);
   watch(watchDir.styles, styles);
   watch(watchDir.vectors, vectors);
@@ -33,4 +32,4 @@ task(clean);
 task('build', series(clean, html, parallel(scripts, styles, vectors)));
 
 // Start Gulp server from command-line
-task('serve', series('build', parallel(watcher, server)));
+task('default', series('build', parallel(watcher, server)));
