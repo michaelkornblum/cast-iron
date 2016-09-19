@@ -1,5 +1,9 @@
+include ../mixins/nav-list-item.pug
+
 nav
   ul.nav-list
     for link in site.links
-      li.nav-list__item
-        a.nav-list__link(href=link.href) #{link.title}
+      if page.title == link.title
+        +nav-list-item(link.href, link.title)(class="nav list-item__active")
+      else
+        +nav-list-item(link.href, link.title)(class="nav list-item")
