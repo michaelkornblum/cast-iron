@@ -1,6 +1,6 @@
 /*jshint esversion: 6*/
 import { src, dest } from 'gulp';
-import { config } from '../gulp-config';
+import { config } from './config';
 import metalsmith from 'gulp-metalsmith';
 import _m from 'load-metalsmith-plugins';
 import _s from 'underscore.string';

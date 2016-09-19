@@ -1,6 +1,6 @@
 /*jshint esversion: 6*/
 import { src, dest } from 'gulp';
-import { config } from '../gulp-config';
+import { config } from './config';
 import imagemin from 'gulp-imagemin';
 
 export function images() {

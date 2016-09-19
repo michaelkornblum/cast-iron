@@ -1,6 +1,6 @@
 /*jshint esversion: 6*/
 import { src, dest } from 'gulp';
-import { config } from '../gulp-config';
+import { config } from './config';
 import _g from 'gulp-load-plugins';
 
 // stylus plugins

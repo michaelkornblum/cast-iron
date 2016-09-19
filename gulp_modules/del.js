@@ -1,5 +1,5 @@
 /*jshint esversion: 6*/
-import { config } from '../gulp-config';
+import { config } from './config';
 import del from 'del';
 
 export function clean() {

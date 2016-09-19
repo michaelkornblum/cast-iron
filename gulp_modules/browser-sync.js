@@ -1,5 +1,5 @@
 /*jshint esversion: 6*/
-import { config, watchDir } from '../gulp-config';
+import { config, watchDir } from './config';
 import { create, init, reload } from 'browser-sync';
 import { watch } from 'gulp';
 

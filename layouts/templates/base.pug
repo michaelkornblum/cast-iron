@@ -1,0 +1,13 @@
+block variables
+  
+doctype html
+html(lang="en")
+  head
+    include ../partials/head.pug
+  body
+    .wrapper
+      include ../partials/header.pug
+      block content
+      include ../partials/footer.pug
+      block scripts
+        script(src="/scripts/main.js")
