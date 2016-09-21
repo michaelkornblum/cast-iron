@@ -14,18 +14,12 @@ export function html() {
         _m().metadata({
           site: 'data/site.json',
         }),
-        _m().markdown({
-          gfm: true,
+        _m().markdownit({
+          html: true,
+          linkify: true,
+          typographer: true,
         }),
-        _m().inPlace({
-          engine: 'pug',
-          __,
-          _s,
-          moment,
-          rename: true,
-          pretty: true,
-          basedir: __dirname + '/src/content/',
-        }),
+        _m().ignore('content/*'),
         _m().collections({
           posts: {
             pattern: 'posts/**/*.html',
@@ -56,7 +50,7 @@ export function html() {
           __,
           _s,
           moment,
-          pretty: false,
+          pretty: true,
         }),
       ],
     }))

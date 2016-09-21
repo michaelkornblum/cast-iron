@@ -1,3 +1,1 @@
-# Hello World #
-
-This is an article written in markdown
+# this is a test

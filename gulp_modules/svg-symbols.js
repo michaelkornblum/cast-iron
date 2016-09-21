@@ -2,7 +2,6 @@
 import { src, dest } from 'gulp';
 import { config } from './config';
 import _g from 'gulp-load-plugins';
-import { basename, extname } from 'path';
 
 export function vectors() {
   return src(config.vectors.src)

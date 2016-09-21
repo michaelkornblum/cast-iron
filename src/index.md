@@ -1,6 +1,6 @@
 ---
 title: Home
-description: An overview of the cast-iron build system
+description: An overview of ClockworkJS
 author: Michael S. Kornblum
 ---
 
