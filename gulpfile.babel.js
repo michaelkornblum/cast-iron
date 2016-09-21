@@ -17,12 +17,14 @@ import { styles } from './gulp_modules/stylus';
 import { vectors } from './gulp_modules/svg-symbols';
 
 // Watch task
-function watcher() {
+function watcher(cb) {
   watch(watchDir.html, html);
   watch(watchDir.images, images);
   watch(watchDir.scripts, scripts);
   watch(watchDir.styles, styles);
   watch(watchDir.vectors, vectors);
+  watch(watchDir.server).on('change', reload);
+  cb();
 }
 
 // Clean build directory from command-line

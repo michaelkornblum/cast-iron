@@ -1,7 +1,6 @@
 /*jshint esversion: 6*/
-import { config, watchDir } from './config';
+import { config } from './config';
 import { create, init, reload } from 'browser-sync';
-import { watch } from 'gulp';
 
 export function server(cb) {
   create();
@@ -10,5 +9,5 @@ export function server(cb) {
       baseDir: config.server.src,
     },
   });
-  watch(watchDir.server).on('change', reload);
+  cb();
 }

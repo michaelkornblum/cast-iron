@@ -1,29 +1,17 @@
 {
-  "title" : "openavenues.org",
+  "title" : "ClockworkJS",
   "links" : [
     {
       "title" : "Home",
       "href" : "/"
     },
     {
-      "title" : "Services",
-      "href" : "/services/"
+      "title" : "Docs",
+      "href" : "/docs/"
     },
     {
-      "title" : "Clients",
-      "href" : "/clients/"
-    },
-    {
-      "title" : "About",
-      "href" : "/about/"
-    },
-    {
-      "title" : "News",
-      "href" : "/news/"
-    },
-    {
-      "title" : "Contribute",
-      "href" : "/contribution/"
+      "title" : "Github Repo",
+      "href" : "https://github.com/michaelkornblum/cast-iron.git"
     }
   ]
 }
