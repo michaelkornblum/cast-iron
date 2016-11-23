@@ -6,7 +6,7 @@ author: Michael S. Kornblum
 
 # Introducing ClockworkJS
 
-**ClockworkJS** is a distribution of tools and technologies, configured to make the building of static websites as easy and hassle free as possible.
+**ClockworkJS** is a distribution of tools and technologies, configured to make the building of static websites as easy and hassle free as possible. Test.
 
 ## Based on Gulp
 ClockworkJS uses the latest version of Gulp to automate CSS preprocessing and image minification. Additionally, Gulp is used to control sub-processes, such as JavaScript module management, live browser testing and static site generation.
