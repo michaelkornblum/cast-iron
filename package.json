@@ -70,7 +70,7 @@
     "stylus": "^0.54.5",
     "typographic": "^3.0.0",
     "underscore.string": "^3.3.4",
-    "webpack": "^1.14.0",
+    "webpack": "^2.2.1",
     "webpack-stream": "^3.2.0"
   }
 }
