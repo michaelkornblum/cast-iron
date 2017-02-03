@@ -48,7 +48,7 @@
     "jquery": "^3.1.0",
     "jshint": "^2.9.3",
     "jshint-loader": "^0.8.3",
-    "jstransformer-markdown": "^1.1.0",
+    "jstransformer-markdown": "^1.1.1",
     "load-metalsmith-plugins": "^0.1.1",
     "lodash": "^4.17.4",
     "lost": "^8.0.0",
