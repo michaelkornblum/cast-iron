@@ -31,7 +31,7 @@ function watcher(cb) {
 task(clean);
 
 // Run default build task from command-line
-task('build', series(clean, vectors, html, parallel(scripts, styles)));
+task('build', series(clean, vectors, images, html, parallel(scripts, styles)));
 
 // Start Gulp server from command-line
 task('serve', series('build', parallel(watcher, server)));
