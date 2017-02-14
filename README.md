@@ -1,4 +1,6 @@
 # Setup
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/michaelkornblum/cast-iron.svg)](https://greenkeeper.io/)
 **Author's Note:** the following guide will get Cast-Iron up and running on official versions of Ubuntu Linux, and some of its distant cousins, namely Linux Mint, and (possibly) Elementary OS. It also works on other versions of Linux, but commands like ```apt install``` will need to be modified in order to install repository packages.
 
 Cast-Iron also works with MacOS, prior to Sierra, however it requires the installation of XCode to compile some of the Gulp modules that are written in C++. At the time of this writing, Cast-Iron does not run in Windows.
